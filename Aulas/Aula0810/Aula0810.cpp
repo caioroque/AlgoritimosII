@@ -17,7 +17,7 @@ int main()
 	int e;
 
 	printf("BORAAAAAAA\n");
-	printf("%i\n", 20);
+	printf("valor total:%i\n", 20 + 10);
 	
 	system("pause");
     return 0;
