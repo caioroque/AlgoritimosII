@@ -15,6 +15,11 @@ bool d;
 int main()
 {
 	int e;
+
+	printf("BORAAAAAAA\n");
+	printf("%i\n", 20);
+	
+	system("pause");
     return 0;
 }
 
