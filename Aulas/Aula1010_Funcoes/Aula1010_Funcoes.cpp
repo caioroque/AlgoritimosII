@@ -10,24 +10,37 @@ void HalloWord() {
 	printf("EAAAIIII\n");
 }
 
-int Soma2Valores(int a, int b) {
+int Soma(int a, int b) {
 	
 	return a + b;
 }
 
-int lerValor() {
-	int variavel;
-	printf(" Numero:");
-	scanf_s("%i", &variavel);
-	return variavel;
+int Subtracao(int a, int b) {
+
+	return a - b;
 }
+
+int Divisao(int a, int b) {
+
+	return a / b;
+}
+
+int Multiplicacao(int a, int b) {
+
+	return a * b;
+}
+
+
 int main()
 {
 	HalloWord();
 
 	int primeiroValor = lerValor();
 	int segundoValor = lerValor();
-	int d = Soma2Valores(primeiroValor, segundoValor);
+	int d = Soma(primeiroValor, segundoValor);
+	int d = Subtracao(primeiroValor, segundoValor);
+	int d = Divisao(primeiroValor, segundoValor);
+	int d = Multiplicacao(primeiroValor, segundoValor);
 	printf("%i", d);
 	system("pause");
     return 0;

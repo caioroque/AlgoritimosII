@@ -18,7 +18,11 @@ int main(void)
 
 
 	// \t da espaço na mesma linha
-	printf("Hello world\n");
+	printf("CALCULADORA\n");
+	int Soma( int num1, int num2) {
+		resultado = num1 + num2;
+		break;
+	}
 
 	printf("\n1 - SOMA\t3 - MULTIPLICACAO \n");
 	printf("-------------------------------------------- \n");
@@ -39,7 +43,8 @@ int main(void)
 
 		switch (op) {
 		case 1:
-			resultado = num1 + num2;
+			/*resultado = num1 + num2;*/
+			Soma();
 			break;
 		case 2:
 			resultado = num1 - num2;
