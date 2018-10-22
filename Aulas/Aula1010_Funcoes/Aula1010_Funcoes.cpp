@@ -10,9 +10,22 @@ void HalloWord() {
 	printf("EAAAIIII\n");
 }
 
-int Soma2Valores(int a, int b) {
+int Soma(int a, int b) {
 	
 	return a + b;
+}
+
+int Multi(int a, int b) {
+
+	return a * b;
+}
+int Sub(int a, int b) {
+
+	return a - b;
+}
+int Div(int a, int b) {
+
+	return a / b;
 }
 
 int lerValor() {
@@ -27,8 +40,14 @@ int main()
 
 	int primeiroValor = lerValor();
 	int segundoValor = lerValor();
-	int d = Soma2Valores(primeiroValor, segundoValor);
-	printf("%i", d);
+	int d = Soma(primeiroValor, segundoValor);
+	int a = Multi(primeiroValor, segundoValor);
+	int b = Sub(primeiroValor, segundoValor);
+	int c = Div(primeiroValor, segundoValor);
+	printf("Soma:%i\n", d);
+	printf("Multi:%i\n", a);
+	printf("Sub:%i\n", b);
+	printf("Div:%i\n", c);
 	system("pause");
     return 0;
 }
