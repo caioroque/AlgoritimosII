@@ -10,26 +10,35 @@ void HalloWord() {
 }
 
 int lerValor() {
-	int variavel;
+	int variavel = 0;
 	printf(" Numero:");
 	scanf_s("%i", &variavel);
 	return variavel;
 }
 
-int Maior(int a, int b, int c, int d) {
-
-	if (a > b, a > c, a > d) {
+int Maior(int a, int b, int c, int d, int media) {
+	
+	if (a > media) {
 		return a;
 	}
-	else if (b > a, b > c, b > d) {
+	else if (b > media) {
 		return b;
 	}
-	else if (c > a, c > b, c > d) {
+	else if (c > media) {
 		return c;
 	}
-	else {
+	else if( d > media){
 		return d;
 	}
+	else {
+		printf("nenhum valor e maior que a media!");
+	}
+}
+int Media(int a, int b, int c, int d) {
+	 
+	int media = a + b + c + d / 4;
+	return media;
+
 }
 
 int main()
