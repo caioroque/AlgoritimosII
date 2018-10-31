@@ -48,42 +48,37 @@ int lerValor() {
 
 
 //EX3
-//int resto(int x, int y);
-//int main(void);
+//int main()
+//{
+//	int idade, ano, mes = 12, dia = 365, calc, calcular, calcular1;
 //
-//int resto(int x, int y) {
-//	int q, r;
-//	q = x / y;
-//	r = x - q * y;
-//	return(r);
+//	printf("Digite a idade: \n");
+//	scanf_s("%i", &idade);
+//
+//	ano = idade * mes;
+//	mes = idade * ano;
+//	dia = idade * ano + mes;
+//	//calc = idade * ano;
+//
+//	printf("Por dia e: %i , %i, %i", ano, mes, dia);
+//
+//	system("pause");
+//	return 0;
 //}
 //
-//int main(void) {
-//	int x, anos, dias, y, w, meses, diass;
-//	dias = lerValor();
-//	x = resto(dias, 365);
-//	if (x == 0)
-//	{
-//		anos = (dias / 365);
-//		printf("%d ano(s) e 0 mes(es) e 0 dia(s)", anos);
-//	}
-//	else
-//	{
-//		anos = (dias / 365);
-//		y = resto(dias, 365);
-//		w = resto(y, 30);
-//		if (w = 0)
-//		{
-//			meses = y / 30;
-//			printf("%d ano(s) e %d mes(es) e 0 dia(s)", anos, meses);
-//		}
-//		else
-//		{
-//			anos = dias / 365;
-//			meses = (y / 30);
-//			diass = resto(y, 30);
-//			printf("%d ano(s) e %d mes(es) e %d dia(s)", anos, meses, diass);
-//		}
-//	}
-//
+
+int main()
+{
+	float media;
+	int d;
+	int nota1 = lerValor();
+	int nota2 = lerValor();
+	int nota3 = lerValor();
+	
+	
+	printf("A media e:%0.2f", );
+	system("pause");
+    return 0;
+}
+
 
