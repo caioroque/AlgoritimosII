@@ -74,9 +74,8 @@ int main()
 	int nota1 = lerValor();
 	int nota2 = lerValor();
 	int nota3 = lerValor();
-	
-	
-	printf("A media e:%0.2f", );
+	media = ((nota1 * 2) + (nota2 * 3) + (nota3 * 5)) / 10;
+	printf("A media e:%0.2f", media );
 	system("pause");
     return 0;
 }
