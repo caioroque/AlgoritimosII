@@ -289,3 +289,22 @@ int lerValor() {
 //}
 //
 
+//ex12
+int main()
+{
+
+	int base, altura;
+		float area;
+	
+	printf("Digite a base:");
+	scanf_s("%i", &base);
+	printf("Digite a altura:");
+	scanf_s("%i", &altura);
+	area =( base + altura )/ 2;
+	printf("A area e:%0.2f" , area);
+	system("pause");
+	return 0;
+}
+
+
+
