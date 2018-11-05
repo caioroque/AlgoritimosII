@@ -290,21 +290,114 @@ int lerValor() {
 //
 
 //ex12
-int main()
-{
+//int main()
+//{
+//
+//	int base, altura;
+//		float area;
+//	
+//	printf("Digite a base:");
+//	scanf_s("%i", &base);
+//	printf("Digite a altura:");
+//	scanf_s("%i", &altura);
+//	area =( base + altura )/ 2;
+//	printf("A area e:%0.2f" , area);
+//	system("pause");
+//	return 0;
+//}
 
-	int base, altura;
-		float area;
-	
-	printf("Digite a base:");
-	scanf_s("%i", &base);
-	printf("Digite a altura:");
-	scanf_s("%i", &altura);
-	area =( base + altura )/ 2;
-	printf("A area e:%0.2f" , area);
-	system("pause");
-	return 0;
-}
+//ex13
+//int main() {
+//
+//	int i, n, soma = 0;
+//	printf("Digite o valor de n: ");
+//	scanf_s("%d", &n);
+//		for (i = 0; i<n; i++)
+//			printf(" %d ", i * 2 + 1);
+//		return 1;
+//	}
+
+//ex14
+//int main() {
+//
+//	printf("XXXXX\n");
+//	printf("X   X\n");
+//	printf("X   X\n");
+//	printf("X   X\n");
+//	printf("XXXXX\n");
+//	system("pause");
+//	return 0;
+//}
+
+//ex15
+
+//int main() {
+//	       
+//	int potencia, contador;
+//
+//	printf("Calculo de potencias\n");
+//	int x = lerValor();
+//	int n = lerValor();
+//
+//	potencia = 1;
+//	contador = 0;
+//
+//	while (contador != n) {
+//		potencia = potencia * x;
+//		contador = contador + 1;
+//	}
+//
+//	printf("\nO valor de %i elevado a %i: %i\n", x, n, potencia);
+//	system("pause");
+//	return 0;
+//}
+
+
+//ex 16
+
+//ex17
+//
+//int main() {
+//
+//	printf("        X       \n");
+//	printf("       XXX       \n");
+//	printf("      XXXXX       \n");
+//	printf("     XXXXXXX      \n");
+//	printf("    XXXXXXXXX       \n");
+//	printf("   XXXXXXXXXXX      \n");
+//	printf("  XXXXXXXXXXXXX       \n");
+//	printf(" XXXXXXXXXXXXXXX       \n");
+//	printf("       XX      \n");
+//	printf("       XX      \n");
+//	printf("      XXXX     \n");
+//	system("pause");
+//	return 0;
+//}
+
+//ex18
+
+//int main() {
+//	int c, x, y;
+//
+//	printf("\nEntre com um valor de 2 a 20: ");
+//	scanf("%d", &x);
+//
+//	for (c = 1; c <= x; c++) {
+//		for (y = 1; y <= c; y++)
+//			printf("%d", y);
+//		printf("\n");
+//	}
+//
+//	for (c = c - 2; c>0; c--) {
+//		for (y = 1; y <= c; y++)
+//			printf("%d", y);
+//		printf("\n");
+//	}
+//
+//	printf("\n");
+//	return 0;
+//}
+
 
 
 
