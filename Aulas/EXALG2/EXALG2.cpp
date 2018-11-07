@@ -566,17 +566,45 @@ int lerValor() {
 
 //ex 26
 
+//int main()
+//{
+//
+//	int data, mes, ano, dia = 365;
+//
+//	printf("Digite a quantos anos a pessoa viveu");
+//	scanf_s("%i", &data);
+//
+//	ano = data * dia;
+//
+//	printf("A pessoa viveu %i dias ", ano);
+//
+//	system("pause");
+//	return 0;
+//
+//}
+
+
+//27
+
+
+//ex28
+
 int main() {
 
-	int mes= 12 ,dia = 365, ano;
+	float salario = 1900;
+	int quant;
+	float comissao = 50;
+	float valor = 0;
+	float valorFinal = 0;
+	printf("Quantos carros vc vendeu?");
+	scanf_s("%i", &quant);
 
-	printf("Quantos anos a pessoa viveu?");
-	scanf_s("%i", &ano);
+	valor = (salario +(quant * comissao) * 0.5) ;
+	valorFinal = (valor * 5)/100;
+	printf("%f", valorFinal);
 
-
-
-
-
+	system("pause");
+	return 0;
 }
 
 
