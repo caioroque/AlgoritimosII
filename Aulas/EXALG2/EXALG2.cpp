@@ -398,6 +398,186 @@ int lerValor() {
 //	return 0;
 //}
 
+//ex19
+
+//int main() {
+//	int k, c, m, d, n, i, j;
+//
+//	printf("Digite a dimensao da matriz\n");
+//	scanf_s("%d %d", &k, &c);
+//
+//	int a[5][5];
+//	//aqui foi tirada a matriz b, que era desnecessária.
+//
+//	printf("Digite os valores da matriz\n");
+//	for (i = 0; i<k; i++) {
+//		printf("Digite os valores para a %d linha\n", i + 1);
+//		for (j = 0; j<c; j++)
+//			scanf_s("%d", &a[i][j]);
+//	}
+//
+//	printf("A matriz digitada é\n");
+//	for (i = 0; i<k; i++) {
+//		for (j = 0; j<c; j++) {
+//			printf("%d ", a[i][j]);
+//		}
+//		printf("\n");
+//	}
+//
+//	printf("Se você quer multiplicar uma linha entre 1 e se quer multiplicar uma coluna entre 2.\n");
+//	scanf_s("%d", &d);
+//	if (d > 2 || d < 1)
+//		printf("Entrada invalida\n");
+//	else {
+//
+//		if (d == 1) {
+//
+//			printf("Digite qual a linha que vai ser multiplicada\n");
+//			scanf_s("%d", &m);
+//
+//			printf("Digite o valor pelo qual quer multiplicar\n");
+//			scanf_s("%d", &n);
+//
+//			for (i = 0; i<c; i++) {
+//				a[m - 1][i] = n * a[m - 1][i]; //usa-se somente a matriz a percorrendo as colunas (limite: variável c).
+//			}
+//
+//			printf("A matriz multiplicada é\n");
+//			for (i = 0; i<k; i++) {
+//				for (j = 0; j<c; j++) {
+//					printf("%d ", a[i][j]); //imprime-se a matriz já multiplicada.
+//				}
+//				printf("\n");
+//			}
+//		}
+//
+//		if (d == 2) {
+//
+//			printf("Digite qual a coluna que vai ser multiplicada\n");
+//			scanf_s("%d", &m);
+//
+//			printf("Digite o valor pelo qual quer multiplicar\n");
+//			scanf_s("%d", &n);
+//
+//			for (j = 0; j<k; j++) {
+//				a[j][m - 1] = n * a[j][m - 1]; //usa-se somente a matriz a percorrendo as linhas (limite: variável k).
+//			}
+//
+//			printf("A matriz multiplicada é\n");
+//			for (i = 0; i<k; i++) {
+//				for (j = 0; j<c; j++) {
+//					printf("%d ", a[i][j]);
+//				}
+//				printf("\n");
+//			}
+//
+//		}
+//	}
+//
+//	system("pause"); 
+//	return 0; 
+//}
+
+//ex20 =  faltaa
+
+//ex 21 = faltaa
+
+//int main()
+//{
+//	int i, n, soma = 0;
+//	printf("Digite um Numero");
+//	scanf_s("%d", &n); 
+//	for (i = 1; i <= n; i++)
+//		if ((n % 2) == 0) {
+//			soma = soma + i;
+//		}
+//	printf(" soma = %d", soma);
+//	system("pause");
+//	return 0;
+//}
+
+//ex 22 = faltaaaa
+
+//int main() {
+//	int k, c, m, d, n, i, j;
+//
+//	printf("Digite a dimensao da matriz\n");
+//	scanf_s("%d %d", &k, &c);
+//
+//	int a[3][3];
+//	//aqui foi tirada a matriz b, que era desnecessária.
+//
+//	printf("Digite os valores da matriz\n");
+//	for (i = 0; i < k; i++) {
+//		printf("Digite os valores para a %d linha\n", i + 1);
+//		for (j = 0; j < c; j++)
+//			scanf_s("%d", &a[i][j]);
+//	}
+//
+//	printf("A matriz digitada é\n");
+//	for (i = 0; i < k; i++) {
+//		for (j = 0; j < c; j++) {
+//			printf("%d ", a[i][j]);
+//		}
+//		printf("\n");
+//	}
+//
+//	printf("Matriz transposta:\n");
+//
+//	
+//	system("pause");
+//	return 0;
+//}
+
+//ex 23
+
+
+//ex24
+//int main() {
+//	int aux = 0;
+//
+//	int A = lerValor();
+//	int B = lerValor();
+//
+//	aux = A;
+//	A = B;
+//	B = aux;
+//
+//	printf("O valor de A:%i e o valor de B:%i", A, B);
+//
+//	system("pause");
+//	return 0;
+//}
+
+//ex25
+//int main() {
+//	float desconto = 0, resto = 0;
+//
+//	float salario = lerValor();
+//	
+//	desconto = (salario * 10)/100;
+//	resto = ((salario - desconto) * 5)/100;
+//	float ultimo = salario - desconto - resto;
+//	printf("O salario liquido e:%f", ultimo);
+//
+//	system("pause");
+//	return 0;
+//}
+
+//ex 26
+
+int main() {
+
+	int mes= 12 ,dia = 365, ano;
+
+	printf("Quantos anos a pessoa viveu?");
+	scanf_s("%i", &ano);
+
+
+
+
+
+}
 
 
 
