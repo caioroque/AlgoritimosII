@@ -379,8 +379,8 @@ int lerValor() {
 //int main() {
 //	int c, x, y;
 //
-//	printf("\nEntre com um valor de 2 a 20: ");
-//	scanf("%d", &x);
+//	printf("\nentre com um valor de 2 a 20: ");
+//	scanf_s("%d", &x);
 //
 //	for (c = 1; c <= x; c++) {
 //		for (y = 1; y <= c; y++)
@@ -395,6 +395,7 @@ int lerValor() {
 //	}
 //
 //	printf("\n");
+//	system("pause");
 //	return 0;
 //}
 
@@ -589,23 +590,122 @@ int lerValor() {
 
 //ex28
 
-int main() {
+//int main() {
+//
+//	float salarioM, comissao = 50, saltotal, total, sal;
+//	int quant;
+//
+//	printf("Digite o valor do salario minimo: ");
+//	scanf_s("%f", &salarioM);
+//	
+//	printf("Quantos carros o funcionario vendeu: ");
+//	scanf_s("%i", &quant);
+//
+//	printf("Digite o valor total de vendas do mes: ");
+//	scanf_s("%f", &total);
+//	
+//	sal = (total * 5) / 100;
+//	total = quant * comissao;
+//	saltotal = (2 * salarioM) + total + sal;
+//
+//	printf("O salario total do vendedor e %.2f \n", saltotal);
+//
+//	system("pause");
+//	return 0;
+//}
 
-	float salario = 1900;
-	int quant;
-	float comissao = 50;
-	float valor = 0;
-	float valorFinal = 0;
-	printf("Quantos carros vc vendeu?");
-	scanf_s("%i", &quant);
+//EX 29 incompleto
 
-	valor = (salario +(quant * comissao) * 0.5) ;
-	valorFinal = (valor * 5)/100;
-	printf("%f", valorFinal);
+//int main()
+//{
+//
+//	int x, y;
+//	int i;
+//
+//	printf("digite um numero entre 2 e 20: ");
+//	scanf_s("%i", &x);
+//
+//	for ( i = x; i > 0; i--){
+//		for (y = 1; y <= i; y++) 
+//			printf("X%i", y);
+//			printf("\n");	
+//	}
+//	/*
+//	for ( i = i - 1; i > 0 ; i--)
+//	{
+//		for(y = 1; y <= i; y++)
+//			printf("%i", y);
+//		printf("\n");
+//	}*/
+//
+//	system("pause");
+//	return 0;
+//
+//}
 
-	system("pause");
-	return 0;
-}
-
-
+////EX 35
+//int main(void)
+//{
+//	setlocale(LC_ALL, "portuguese");
+//	int idade, sexo, olho, cabelo;
+//	int maiorIdade = 0, quantFemi = 0;
+//	int validar = 0;
+//	
+//	do
+//	{
+//
+//	printf("****** Cadastro ******\n\n");
+//	for (int i = 0; ; i++)
+//	{
+//		printf("Digite a idade ");
+//		scanf_s("%i", &idade);
+//		if (idade < 0)
+//
+//		break;
+//		if (i == 0)
+//
+//			maiorIdade = idade;
+//		else if (maiorIdade > idade )
+//		
+//		system("cls");
+//		printf("Sexo \n");
+//		printf("1 - Masculino \n2 - Feminino \n");
+//		scanf_s("%i", &sexo);
+//
+//		system("cls");
+//		printf("Cor dos olhos \n");
+//
+//		printf("1 - Azuis \n2 - Verdes\n3 - Castanhos \n");
+//		scanf_s("%i", &olho);
+//
+//		system("cls");
+//		printf("Cor do cabelo \n");
+//
+//		printf("1 - louro \n2 - castanho\n3 - preto \n");
+//		scanf_s("%i", &cabelo);
+//		system("cls");
+//
+//		if (sexo == 2)
+//			if ((idade >= 18) && (idade <= 35))
+//				if (olho == 2)
+//					if (cabelo == 3)
+//						quantFemi++;
+//
+//		validar = 1;
+//		}
+//	} while (idade != -1);
+//	if (!validar)
+//	{
+//		("Não há dados");
+//	}
+//	else
+//	{
+//		printf("A maior idade é %i\n A quantidade de mulheres entre 18 e 35 que tem olhos verdes e cabelo preto é de %i \n", maiorIdade, quantFemi);
+//	}
+//
+//
+//	system("pause");
+//	return 0;
+//
+//}
 
