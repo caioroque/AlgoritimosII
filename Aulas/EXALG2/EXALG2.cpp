@@ -6,13 +6,15 @@
 #include <stdlib.h>
 #include <math.h>
 #include <locale.h>
+
+#include <locale.h>
 int lerValor() {
 	int variavel = 0;
 	printf(" Numero:");
 	scanf_s("%i", &variavel);
 	return variavel;
 }
-//EX1
+								//EX 1
 //int main()
 //{
 //	float raiz;
@@ -28,7 +30,7 @@ int lerValor() {
 //    return 0;
 //}
 
-//EX2
+								//EX 2
 //int main()
 //{
 //	float Z;
@@ -47,7 +49,7 @@ int lerValor() {
 //}
 
 
-//EX3
+								//EX 3
 //int main()
 //{
 //	int idade, ano, mes = 12, dia = 365, calc, calcular, calcular1;
@@ -528,6 +530,7 @@ int lerValor() {
 //	
 //	system("pause");
 //	return 0;
+//
 //}
 
 //ex 23
@@ -545,9 +548,33 @@ int lerValor() {
 //	B = aux;
 //
 //	printf("O valor de A:%i e o valor de B:%i", A, B);
+
+								//EX 6
+//int main()
+//{
+//	setlocale(LC_ALL, "portuguese");
+//
+//	int n, i, soma;
+//
+//	printf("Digite o valor de N: ");
+//	scanf_s("%i", &n);
 //
 //	system("pause");
 //	return 0;
+//}
+//	soma = 0;
+//	i = 1;
+//	while (i <= n)
+//	{
+//		soma = soma + i;
+//		i ++;
+//	}
+//
+//	printf("A soma dos %i primeiros numeros inteiros é: %i", n, soma);
+//
+//	system("pause");
+//	return 0;
+//	
 //}
 
 //ex25
@@ -642,6 +669,73 @@ int lerValor() {
 //	return 0;
 //
 //}
+									//EX 7
+//int main()
+//{
+//	setlocale(LC_ALL, "portuguese");
+//
+//	int a = lerValor();
+//	int b = lerValor();
+//
+//	if (a > b)
+//	{
+//		if (a % b == 0)
+//		{
+//			printf("São multiplos");
+//		}
+//		else
+//		{
+//			printf("Não são multiplos  ");
+//		}
+//	}
+//
+//	system("pause");
+//	return 0;
+//
+//}
+
+									//EX 8
+//int main()
+//{
+//	int idade, op = 0;
+//	
+//	printf("Digite sua idade: ");
+//	scanf_s("%i", &idade);
+//
+//	if (idade < 5)
+//	{
+//		printf("Abaixo de todas as categorias \n");
+//	}
+//	else if ((idade >= 5) && (idade <= 7))
+//	{
+//		printf("Categoria Infantil A \n");
+//	}
+//	else if ((idade >= 8) && (idade <= 10))
+//	{
+//		printf("Categoria Infantil B \n");
+//	}
+//	else if ((idade >= 11) && (idade <= 13))
+//	{
+//		printf("Categoria Juvenil A \n");
+//	}
+//	else if ((idade >= 14) && (idade <= 17))
+//	{
+//		printf("Categoria Juvenil B \n");
+//	}
+//	else if (idade > 18)
+//	{
+//		printf("Categoria Adulto \n");
+//	}
+//	else
+//	{
+//		printf("Idade invalida \n");
+//	}
+//
+//	system("pause");
+//	return 0;
+//}
+
+
 
 ////EX 35
 //int main(void)
