@@ -6,8 +6,8 @@
 #include <stdlib.h>
 #include <math.h>
 #include <locale.h>
-
 #include <locale.h>
+
 int lerValor() {
 	int variavel = 0;
 	printf(" Numero:");
@@ -559,9 +559,6 @@ int lerValor() {
 //	printf("Digite o valor de N: ");
 //	scanf_s("%i", &n);
 //
-//	system("pause");
-//	return 0;
-//}
 //	soma = 0;
 //	i = 1;
 //	while (i <= n)
@@ -575,6 +572,9 @@ int lerValor() {
 //	system("pause");
 //	return 0;
 //	
+//}
+//	system("pause");
+//	return 0;
 //}
 
 //ex25
