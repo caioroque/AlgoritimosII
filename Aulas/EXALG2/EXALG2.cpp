@@ -656,7 +656,7 @@ int lerValor() {
 int main() {
 
 	int filhos, quant = 0, TotalFilhos = 0;
-	float salario = 0, media, MaiorS = 0, TotalSalario=0, mediaFilhos, salario100=0;
+	float salario = 0, media, MaiorS = 0, TotalSalario=0, mediaFilhos, salario100=0, Percento100= 0;
 
 	do {
 			printf("Qual seu salario:");
@@ -675,17 +675,18 @@ int main() {
 					MaiorS = salario;
 				}
 				if (salario <= 100) {
-					salario100 =((salario * 100)/quant);
+					salario100 = salario;
 				}
 			}
 			
 	} while (salario > 0);
 	media = TotalSalario / quant;
 	mediaFilhos = TotalFilhos / quant;
+	Percento100 = salario100 / quant;
 	printf("Media de salario da populacao:%0.2f\n", media);
 	printf("Media de filhos e: %0.2f\n", mediaFilhos);
 	printf("O maior salario e: %0.2f\n", MaiorS);
-	printf("O Percentual de pessoas com salario menor que 100: %0.2f\n", salario100);
+	printf("O Percentual de pessoas com salario menor que 100: %0.2f\n", Percento100);
 	system("pause");
 	return 0;
 }
