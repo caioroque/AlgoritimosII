@@ -589,23 +589,231 @@ int lerValor() {
 
 //ex28
 
+//int main() {
+//
+//	float salario = 1900;
+//	int quant;
+//	float comissao = 50;
+//	float valor = 0;
+//	float valorFinal = 0;
+//	printf("Quantos carros vc vendeu?");
+//	scanf_s("%i", &quant);
+//
+//	valor = (salario +(quant * comissao) * 0.5) ;
+//	valorFinal = (valor * 5)/100;
+//	printf("%f", valorFinal);
+//
+//	system("pause");
+//	return 0;
+//}
+
+//ex29
+
+//int main() {
+//	int X = lerValor();
+//	int Y = lerValor();
+//	int Z = lerValor();
+//
+//	if (X == Y && Y == Z && X == Z) {
+//		printf("O Triangulo e equilatero!!");
+//	}
+//	else if (X == Y && Y != Z ) {
+//		printf("O Triangulo e isósceles!!");
+//
+//	}
+//	else if (X != Y && Y != Z) {
+//		printf("O Triangulo e escanor!!\n");
+//		printf("O Pecado Do Orgulho!!");
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+//Ex31
+
+//int main() {
+//
+//	int a, i ,negativos = 0;
+//
+//	for (i = 0; i <= 4; i++) {
+//
+//		printf("Informe um numero:");
+//		scanf_s("%i", &a);
+//		if (a < 0) {
+//			negativos++;
+//		}
+//	}
+//	printf("valor:%i\n",negativos);
+//	system("pause");
+//	return 0;
+//
+//
+//}
+
+
+//Ex32
+
 int main() {
 
-	float salario = 1900;
-	int quant;
-	float comissao = 50;
-	float valor = 0;
-	float valorFinal = 0;
-	printf("Quantos carros vc vendeu?");
-	scanf_s("%i", &quant);
+	int filhos, quant = 0, TotalFilhos = 0;
+	float salario = 0, media, MaiorS = 0, TotalSalario=0, mediaFilhos, salario100=0;
 
-	valor = (salario +(quant * comissao) * 0.5) ;
-	valorFinal = (valor * 5)/100;
-	printf("%f", valorFinal);
-
+	do {
+			printf("Qual seu salario:");
+			scanf_s("%f", &salario);
+			if (salario < 0) {
+				break;
+			}
+			else
+			{
+				printf("Quantos filhos:");
+				scanf_s("%i", &filhos);
+				TotalFilhos = TotalFilhos + filhos;
+				quant++;
+				TotalSalario = MaiorS + salario;
+				if (salario > MaiorS) {
+					MaiorS = salario;
+				}
+				if (salario <= 100) {
+					salario100 =((salario * 100)/quant);
+				}
+			}
+			
+	} while (salario > 0);
+	media = TotalSalario / quant;
+	mediaFilhos = TotalFilhos / quant;
+	printf("Media de salario da populacao:%0.2f\n", media);
+	printf("Media de filhos e: %0.2f\n", mediaFilhos);
+	printf("O maior salario e: %0.2f\n", MaiorS);
+	printf("O Percentual de pessoas com salario menor que 100: %0.2f\n", salario100);
 	system("pause");
 	return 0;
 }
+
+//Ex 34
+
+
+
+////EX 35
+//int main(void)
+//{
+//	setlocale(LC_ALL, "portuguese");
+//	int idade, sexo, olho, cabelo;
+//	int maiorIdade = 0, quantFemi = 0;
+//	int validar = 0;
+//	
+//	do
+//	{
+//
+//	printf("****** Cadastro ******\n\n");
+//	for (int i = 0; ; i++)
+//	{
+//		printf("Digite a idade ");
+//		scanf_s("%i", &idade);
+//		if (idade < 0)
+//
+//		break;
+//		if (i == 0)
+//
+//			maiorIdade = idade;
+//		else if (maiorIdade > idade )
+//		
+//		system("cls");
+//		printf("Sexo \n");
+//		printf("1 - Masculino \n2 - Feminino \n");
+//		scanf_s("%i", &sexo);
+//
+//		system("cls");
+//		printf("Cor dos olhos \n");
+//
+//		printf("1 - Azuis \n2 - Verdes\n3 - Castanhos \n");
+//		scanf_s("%i", &olho);
+//
+//		system("cls");
+//		printf("Cor do cabelo \n");
+//
+//		printf("1 - louro \n2 - castanho\n3 - preto \n");
+//		scanf_s("%i", &cabelo);
+//		system("cls");
+//
+//		if (sexo == 2)
+//			if ((idade >= 18) && (idade <= 35))
+//				if (olho == 2)
+//					if (cabelo == 3)
+//						quantFemi++;
+//
+//		validar = 1;
+//		}
+//	} while (idade != -1);
+//	if (!validar)
+//	{
+//		("Não há dados");
+//	}
+//	else
+//	{
+//		printf("A maior idade é %i\n A quantidade de mulheres entre 18 e 35 que tem olhos verdes e cabelo preto é de %i \n", maiorIdade, quantFemi);
+//	}
+//
+//
+//	system("pause");
+//	return 0;
+//
+//}
+
+//EX 36
+
+//int main()
+//{
+//	setlocale(LC_ALL, "Portuguese");
+//	float cod = 0, precotot = 0, preco = 0;
+//	int  quant = 0;
+//
+//	do
+//	{
+//		printf("Digite o cod: ");
+//		scanf_s("%f", &cod);
+//
+//		if (cod == -1)
+//		{
+//			break;
+//		}
+//		else
+//		{
+//
+//			printf("Digite a quantidade: ");
+//			scanf_s("%i", &quant);
+//
+//			if (cod == 1001) {
+//				preco = 5.32;
+//				precotot = (preco * quant);
+//			}
+//
+//			else if (cod == 1324) {
+//				preco = 6.45;
+//				precotot = (preco * quant);
+//
+//			}
+//			else if (cod == 6548) {
+//				preco = 2.37;
+//				precotot = (preco * quant);
+//			}
+//
+//			else if (cod == 947) {
+//				preco = 5.32;
+//				precotot = (preco * quant);
+//			}
+//			else if (cod == 7623) {
+//				preco = 6.45;
+//				precotot = (preco * quant);
+//			}
+//		}
+//	} while (cod > -1);
+//
+//	printf("O valor total é %.2f", precotot);
+//
+//	system("pause");
+//	return 0;
+//}
 
 
 
