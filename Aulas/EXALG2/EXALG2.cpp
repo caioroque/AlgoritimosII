@@ -7,6 +7,7 @@
 #include <math.h>
 #include <locale.h>
 #include <locale.h>
+#include <conio.h>
 
 int lerValor() {
 	int variavel = 0;
@@ -736,6 +737,39 @@ int lerValor() {
 //}
 
 
+//EX 34
+//int main()
+//{
+//	int num = 0, maior = 0, menor = 0, i = 0;
+//
+//	printf("Digite um nnumero: ");
+//	scanf_s("%i", &num);
+//
+//	maior = num;
+//	menor = num;
+//
+//	for (i = num; i <= 50; i++)
+//	{
+//		printf_s("Digite outro numero: ");
+//		scanf_s("%i", &num);
+//
+//		if (num > maior)
+//		{
+//			maior = num;
+//		}
+//		if (num < menor)
+//		{
+//			menor = num;
+//		}
+//
+//		printf("O maior e %i e o menor e %i", maior, menor);
+//
+//		system("pause");
+//		return 0;
+//	}
+//}
+
+
 
 ////EX 35
 //int main(void)
@@ -801,5 +835,69 @@ int lerValor() {
 //	system("pause");
 //	return 0;
 //
+//}
+
+//EX 36
+//int main()
+//{
+//
+//	int cod = 0, quant = 0;
+//	float precotot, preco;
+//
+//	
+//	
+//	do
+//	{
+//		printf("Digite o codigo do produto ");
+//		scanf_s("%i", &cod);
+//
+//		if (cod == -1)
+//		{
+//			break;
+//		}
+//		else
+//		{
+//
+//
+//
+//			printf("Digite a quantidade do produto ");
+//			scanf_s("%i", &quant);
+//
+//			if (cod == 1001)
+//			{
+//				preco = 5.32;
+//				precotot = (preco * quant);
+//			}
+//
+//			else if (cod == 1324)
+//			{
+//				preco = 6.45;
+//				precotot = (preco * quant);
+//			}
+//
+//			else if (cod == 6548)
+//			{
+//				preco = 2.37;
+//				precotot = (preco * quant);
+//			}
+//
+//			else if (cod == 987) //Não funciona com o 0 // 0987
+//			{
+//				preco = 5.32;
+//				precotot = (preco * quant);
+//			}
+//
+//			else if (cod == 7623)
+//			{
+//				preco = 6.45;
+//				precotot = (preco * quant);
+//			}
+//		}
+//	}while (cod != -1);
+//
+//	printf("O preco total e %.2f ", precotot);
+//
+//	system("pause");
+//	return 0; 
 //}
 
