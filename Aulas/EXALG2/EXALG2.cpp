@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <locale.h>
+#define PI 3.141592 
 int lerValor() {
 	int variavel = 0;
 	printf(" Numero:");
@@ -67,6 +68,7 @@ int lerValor() {
 //}
 //
 
+//ex4
 //int main()
 //{
 //	float media;
@@ -81,6 +83,7 @@ int lerValor() {
 //}
 //
 
+//Ex5
 //int main()
 //{
 //	setlocale(LC_ALL, "portuguese");
@@ -289,6 +292,19 @@ int lerValor() {
 //}
 //
 
+//Ex11
+//
+//int main()
+//{
+//	float  area, raio;
+//	printf("Digite o raio:\n");
+//	scanf("%f", &raio);
+//	area = PI*(pow(raio, 2));
+//	printf("A area da circunferencia é: %.2f", area);
+//
+//	return 0;
+//}
+
 //ex12
 //int main()
 //{
@@ -354,6 +370,7 @@ int lerValor() {
 
 
 //ex 16
+
 
 //ex17
 //
@@ -478,9 +495,43 @@ int lerValor() {
 //	return 0; 
 //}
 
-//ex20 =  faltaa
+//ex20 
+//#define M 3 
+//#define M 4 
+//
+//void funcao(int x[][], int lin, int col) {
+//	int i, j;
+//	for (i = 0; i<lin; i++)
+//		for (j = 0; j<col; j++)
+//			if (x[i][j] < 0)
+//				x[i][j] = -x[i][j];
+//}
+//int main() {
+//	int mat[M][N], i, j;
+//	for (i = 0; i<M; i++)
+//		for (j = 0; j<N; j++) {
+//			printf("Informe mat[%d][%d]: ", i, j);
+//			scanf("%d", &mat[i][j]);
+//		}
+//	printf("Matriz antes\n");
+//	for (i = 0; i<M; i++) {
+//		for (j = 0; j<N; j++)
+//			printf("%d\t", mat[i][j]);
+//		printf("\n");
+//	}
+//	funcao(mat, M, N);
+//	printf("Matriz depois\n");
+//	for (i = 0; i<M; i++) {
+//		for (j = 0; j<N; j++)
+//			printf("%d\t", mat[i][j]);
+//		printf("\n");
+//	}
+//	system("pause");
+//	return 0;
+//}
 
-//ex 21 = faltaa
+
+//ex 21 
 
 //int main()
 //{
@@ -496,7 +547,7 @@ int lerValor() {
 //	return 0;
 //}
 
-//ex 22 = faltaaaa
+//ex 22
 
 //int main() {
 //	int k, c, m, d, n, i, j;
@@ -530,6 +581,25 @@ int lerValor() {
 //}
 
 //ex 23
+
+//int main() {
+//
+//	int tempo, velocidade, distancia, litros;
+//	
+//	printf("Informe o tempo de viajem:");
+//	scanf_s("%i", &tempo);
+//	printf("Informe a velocidade media:");
+//	scanf_s("%i", &velocidade);
+//	distancia = tempo * velocidade;
+//	litros = distancia / 12;
+//	printf("A velocidade media e:%i\n", velocidade);
+//	printf("O tempo da viagem foi:%i\n", tempo);
+//	printf("A distancia da viagem foi:%i\n", distancia);
+//	printf("A quantidade de litros utilizados na viagem foi:%i\n", litros);
+//
+//	system("pause");
+//	return 0;
+//}
 
 
 //ex24
@@ -629,6 +699,30 @@ int lerValor() {
 //	return 0;
 //}
 
+//EX30
+
+//int main() {
+//	int c, x, y;
+//
+//	printf("\nEntre com um valor de 2 a 20: ");
+//	scanf("%d", &x);
+//
+//	for (c = 1; c <= x; c++) {
+//		for (y = 1; y <= c; y++)
+//			printf("%d", y);
+//		printf("\n");
+//	}
+//
+//	for (c = c - 2; c>0; c--) {
+//		for (y = 1; y <= c; y++)
+//			printf("%d", y);
+//		printf("\n");
+//	}
+//
+//	printf("\n");
+//	return 0;
+//}
+
 //Ex31
 
 //int main() {
@@ -653,45 +747,87 @@ int lerValor() {
 
 //Ex32
 
-int main() {
+//int main() {
+//
+//	int filhos, quant = 0, TotalFilhos = 0;
+//	float salario = 0, media, MaiorS = 0, TotalSalario=0, mediaFilhos, salario100=0, Percento100= 0;
+//
+//	do {
+//			printf("Qual seu salario:");
+//			scanf_s("%f", &salario);
+//			if (salario < 0) {
+//				break;
+//			}
+//			else
+//			{
+//				printf("Quantos filhos:");
+//				scanf_s("%i", &filhos);
+//				TotalFilhos = TotalFilhos + filhos;
+//				quant++;
+//				TotalSalario = MaiorS + salario;
+//				if (salario > MaiorS) {
+//					MaiorS = salario;
+//				}
+//				if (salario <= 100) {
+//					salario100 = salario;
+//				}
+//			}
+//			
+//	} while (salario > 0);
+//	media = TotalSalario / quant;
+//	mediaFilhos = TotalFilhos / quant;
+//	Percento100 = salario100 / quant;
+//	printf("Media de salario da populacao:%0.2f\n", media);
+//	printf("Media de filhos e: %0.2f\n", mediaFilhos);
+//	printf("O maior salario e: %0.2f\n", MaiorS);
+//	printf("O Percentual de pessoas com salario menor que 100: %0.2f\n", Percento100);
+//	system("pause");
+//	return 0;
+//}
 
-	int filhos, quant = 0, TotalFilhos = 0;
-	float salario = 0, media, MaiorS = 0, TotalSalario=0, mediaFilhos, salario100=0, Percento100= 0;
+//EX 33
+//int main()
+//{
+//	float juca = 1.10;
+//	float chico = 1.50;
+//	int ano;
+//	ano = 0;
+//	while (juca < chico)
+//	{
+//		juca = juca + 0.03;
+//		chico = chico + 0.02;
+//		ano = ano + 1;
+//	}
+//	printf("%d Anos deverao ser necessarios para que Juca seja maior que Chico. \n", ano);
+//	printf("%f A Altura de Juca daqui a 41 anos\n", juca);
+//	printf("%f A altura de Chico daqui a 41 anos\n", chico);
+//	system("PAUSE");
+//	return 0;
+//}
 
-	do {
-			printf("Qual seu salario:");
-			scanf_s("%f", &salario);
-			if (salario < 0) {
-				break;
-			}
-			else
-			{
-				printf("Quantos filhos:");
-				scanf_s("%i", &filhos);
-				TotalFilhos = TotalFilhos + filhos;
-				quant++;
-				TotalSalario = MaiorS + salario;
-				if (salario > MaiorS) {
-					MaiorS = salario;
-				}
-				if (salario <= 100) {
-					salario100 = salario;
-				}
-			}
-			
-	} while (salario > 0);
-	media = TotalSalario / quant;
-	mediaFilhos = TotalFilhos / quant;
-	Percento100 = salario100 / quant;
-	printf("Media de salario da populacao:%0.2f\n", media);
-	printf("Media de filhos e: %0.2f\n", mediaFilhos);
-	printf("O maior salario e: %0.2f\n", MaiorS);
-	printf("O Percentual de pessoas com salario menor que 100: %0.2f\n", Percento100);
-	system("pause");
-	return 0;
-}
+
 
 //Ex 34
+//using namespace std;
+//
+//int main(int argc, char *argv[])
+//{
+//		int x, n, maior = 0, menor = 9999;
+//		for (x = 1; x <= 50; x++) {
+//				printf("informe um numero \n");
+//				scanf("%d", &n);
+//	
+//				if (n > maior) {
+//					maior = n;
+//				}
+//				if (n < menor) {
+//					menor = n;
+//				}
+//		}
+//		printf("o maior numero e %d e o menor e %d\n", maior, menor);
+//		system("PAUSE");
+//		return 0;
+//}
 
 
 
@@ -761,7 +897,43 @@ int main() {
 //
 //}
 
-//EX 36
+
+//EX36
+//#define TAM 20
+//int main() {
+//	int i, j, n;
+//	for (i = 0; i < TAM; i++) {
+//		printf("Digite um número para o cálculo de sua tabuada de 1 a n x n\n");
+//		scanf("%d", &n);
+//		for (j = 1; j <= n; j++) {
+//			printf("%d x %d = %d\n", j, n, j * n);
+//		}
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+//EX37
+//typedef struct dado {
+//	int horas;
+//	int minutos;
+//}Dado;
+//
+//int main()
+//{
+//	Dado w;
+//	int x, y;
+//	printf("informe  os minutos");
+//	scanf_s("%d", &w.minutos);
+//	y = w.minutos / 60;
+//	x = w.minutos % 60;
+//	printf("%i:%i", y, x);
+//	system("pause");
+//	return 0;
+//}
+
+//EX 40
 
 //int main()
 //{
@@ -814,7 +986,5 @@ int main() {
 //
 //	system("pause");
 //	return 0;
-//}
-
 
 
