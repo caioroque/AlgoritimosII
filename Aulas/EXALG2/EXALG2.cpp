@@ -6,8 +6,8 @@
 #include <stdlib.h>
 #include <math.h>
 #include <locale.h>
-#include <stdbool.h> 
-#define PI 3.141592 
+#include <locale.h>
+#include <conio.h>
 
 int lerValor() {
 	int variavel = 0;
@@ -15,8 +15,7 @@ int lerValor() {
 	scanf_s("%i", &variavel);
 	return variavel;
 }
-
-//EX1
+								//EX 1
 //int main()
 //{
 //	float raiz;
@@ -32,7 +31,7 @@ int lerValor() {
 //    return 0;
 //}
 
-//EX2
+								//EX 2
 //int main()
 //{
 //	float Z;
@@ -51,7 +50,7 @@ int lerValor() {
 //}
 
 
-//EX3
+								//EX 3
 //int main()
 //{
 //	int idade, ano, mes = 12, dia = 365, calc, calcular, calcular1;
@@ -443,7 +442,7 @@ int lerValor() {
 //	int c, x, y;
 //
 //	printf("\nentre com um valor de 2 a 20: ");
-//	scanf_s("%i", &x);
+//	scanf_s("%d", &x);
 //
 //	for (c = 1; c <= x; c++) {
 //		for (y = 1; y <= c; y++)
@@ -625,6 +624,7 @@ int lerValor() {
 //	
 //	system("pause");
 //	return 0;
+//
 //}
 
 //ex 23
@@ -661,7 +661,31 @@ int lerValor() {
 //	B = aux;
 //
 //	printf("O valor de A:%i e o valor de B:%i", A, B);
+
+								//EX 6
+//int main()
+//{
+//	setlocale(LC_ALL, "portuguese");
 //
+//	int n, i, soma;
+//
+//	printf("Digite o valor de N: ");
+//	scanf_s("%i", &n);
+//
+//	soma = 0;
+//	i = 1;
+//	while (i <= n)
+//	{
+//		soma = soma + i;
+//		i ++;
+//	}
+//
+//	printf("A soma dos %i primeiros numeros inteiros é: %i", n, soma);
+//
+//	system("pause");
+//	return 0;
+//	
+//}
 //	system("pause");
 //	return 0;
 //}
@@ -761,172 +785,153 @@ int lerValor() {
 
 //int main() {
 //
-//	float salario = 1900;
+//	float salarioM, comissao = 50, saltotal, total, sal;
 //	int quant;
-//	float comissao = 50;
-//	float valor = 0;
-//	float valorFinal = 0;
-//	printf("Quantos carros vc vendeu?");
+//
+//	printf("Digite o valor do salario minimo: ");
+//	scanf_s("%f", &salarioM);
+//	
+//	printf("Quantos carros o funcionario vendeu: ");
 //	scanf_s("%i", &quant);
 //
-//	valor = (salario +(quant * comissao) * 0.5) ;
-//	valorFinal = (valor * 5)/100;
-//	printf("%f", valorFinal);
+//	printf("Digite o valor total de vendas do mes: ");
+//	scanf_s("%f", &total);
+//	
+//	sal = (total * 5) / 100;
+//	total = quant * comissao;
+//	saltotal = (2 * salarioM) + total + sal;
+//
+//	printf("O salario total do vendedor e %.2f \n", saltotal);
 //
 //	system("pause");
 //	return 0;
 //}
 
-//ex29
+//EX 29 incompleto
 
-//int main() {
-//	int X = lerValor();
-//	int Y = lerValor();
-//	int Z = lerValor();
-//
-//	if (X == Y && Y == Z && X == Z) {
-//		printf("O Triangulo e equilatero!!");
-//	}
-//	else if (X == Y && Y != Z ) {
-//		printf("O Triangulo e isósceles!!");
-//
-//	}
-//	else if (X != Y && Y != Z) {
-//		printf("O Triangulo e escanor!!\n");
-//		printf("O Pecado Do Orgulho!!");
-//	}
-//	system("pause");
-//	return 0;
-//}
-
-//EX30
-
-//int main() {
-//	int c, x, y;
-//
-//	printf("\nEntre com um valor de 2 a 20: ");
-//	scanf("%d", &x);
-//
-//	for (c = 1; c <= x; c++) {
-//		for (y = 1; y <= c; y++)
-//			printf("%d", y);
-//		printf("\n");
-//	}
-//
-//	for (c = c - 2; c>0; c--) {
-//		for (y = 1; y <= c; y++)
-//			printf("%d", y);
-//		printf("\n");
-//	}
-//
-//	printf("\n");
-//	return 0;
-//}
-
-//Ex31
-
-//int main() {
-//
-//	int a, i ,negativos = 0;
-//
-//	for (i = 0; i <= 4; i++) {
-//
-//		printf("Informe um numero:");
-//		scanf_s("%i", &a);
-//		if (a < 0) {
-//			negativos++;
-//		}
-//	}
-//	printf("valor:%i\n",negativos);
-//	system("pause");
-//	return 0;
-//
-//
-//}
-
-
-//Ex32
-
-//int main() {
-//
-//	int filhos, quant = 0, TotalFilhos = 0;
-//	float salario = 0, media, MaiorS = 0, TotalSalario=0, mediaFilhos, salario100=0, Percento100= 0;
-//
-//	do {
-//			printf("Qual seu salario:");
-//			scanf_s("%f", &salario);
-//			if (salario < 0) {
-//				break;
-//			}
-//			else
-//			{
-//				printf("Quantos filhos:");
-//				scanf_s("%i", &filhos);
-//				TotalFilhos = TotalFilhos + filhos;
-//				quant++;
-//				TotalSalario = MaiorS + salario;
-//				if (salario > MaiorS) {
-//					MaiorS = salario;
-//				}
-//				if (salario <= 100) {
-//					salario100 = salario;
-//				}
-//			}
-//			
-//	} while (salario > 0);
-//	media = TotalSalario / quant;
-//	mediaFilhos = TotalFilhos / quant;
-//	Percento100 = salario100 / quant;
-//	printf("Media de salario da populacao:%0.2f\n", media);
-//	printf("Media de filhos e: %0.2f\n", mediaFilhos);
-//	printf("O maior salario e: %0.2f\n", MaiorS);
-//	printf("O Percentual de pessoas com salario menor que 100: %0.2f\n", Percento100);
-//	system("pause");
-//	return 0;
-//}
-
-//EX 33
 //int main()
 //{
-//	float juca = 1.10;
-//	float chico = 1.50;
-//	int ano;
-//	ano = 0;
-//	while (juca < chico)
-//	{
-//		juca = juca + 0.03;
-//		chico = chico + 0.02;
-//		ano = ano + 1;
+//
+//	int x, y;
+//	int i;
+//
+//	printf("digite um numero entre 2 e 20: ");
+//	scanf_s("%i", &x);
+//
+//	for ( i = x; i > 0; i--){
+//		for (y = 1; y <= i; y++) 
+//			printf("X%i", y);
+//			printf("\n");	
 //	}
-//	printf("%d Anos deverao ser necessarios para que Juca seja maior que Chico. \n", ano);
-//	printf("%f A Altura de Juca daqui a 41 anos\n", juca);
-//	printf("%f A altura de Chico daqui a 41 anos\n", chico);
-//	system("PAUSE");
+//	/*
+//	for ( i = i - 1; i > 0 ; i--)
+//	{
+//		for(y = 1; y <= i; y++)
+//			printf("%i", y);
+//		printf("\n");
+//	}*/
+//
+//	system("pause");
+//	return 0;
+//
+//}
+									//EX 7
+//int main()
+//{
+//	setlocale(LC_ALL, "portuguese");
+//
+//	int a = lerValor();
+//	int b = lerValor();
+//
+//	if (a > b)
+//	{
+//		if (a % b == 0)
+//		{
+//			printf("São multiplos");
+//		}
+//		else
+//		{
+//			printf("Não são multiplos  ");
+//		}
+//	}
+//
+//	system("pause");
+//	return 0;
+//
+//}
+
+									//EX 8
+//int main()
+//{
+//	int idade, op = 0;
+//	
+//	printf("Digite sua idade: ");
+//	scanf_s("%i", &idade);
+//
+//	if (idade < 5)
+//	{
+//		printf("Abaixo de todas as categorias \n");
+//	}
+//	else if ((idade >= 5) && (idade <= 7))
+//	{
+//		printf("Categoria Infantil A \n");
+//	}
+//	else if ((idade >= 8) && (idade <= 10))
+//	{
+//		printf("Categoria Infantil B \n");
+//	}
+//	else if ((idade >= 11) && (idade <= 13))
+//	{
+//		printf("Categoria Juvenil A \n");
+//	}
+//	else if ((idade >= 14) && (idade <= 17))
+//	{
+//		printf("Categoria Juvenil B \n");
+//	}
+//	else if (idade > 18)
+//	{
+//		printf("Categoria Adulto \n");
+//	}
+//	else
+//	{
+//		printf("Idade invalida \n");
+//	}
+//
+//	system("pause");
 //	return 0;
 //}
 
 
-
-//Ex 34
-//using namespace std;
-//
-//int main(int argc, char *argv[])
+//EX 34
+//int main()
 //{
-//		int x, n, maior = 0, menor = 9999;
-//		for (x = 1; x <= 50; x++) {
-//				printf("informe um numero \n");
-//				scanf("%d", &n);
-//	
-//				if (n > maior) {
-//					maior = n;
-//				}
-//				if (n < menor) {
-//					menor = n;
-//				}
+//	int num = 0, maior = 0, menor = 0, i = 0;
+//
+//	printf("Digite um nnumero: ");
+//	scanf_s("%i", &num);
+//
+//	maior = num;
+//	menor = num;
+//
+//	for (i = num; i <= 50; i++)
+//	{
+//		printf_s("Digite outro numero: ");
+//		scanf_s("%i", &num);
+//
+//		if (num > maior)
+//		{
+//			maior = num;
 //		}
-//		printf("o maior numero e %d e o menor e %d\n", maior, menor);
-//		system("PAUSE");
+//		if (num < menor)
+//		{
+//			menor = num;
+//		}
+//
+//		printf("O maior e %i e o menor e %i", maior, menor);
+//
+//		system("pause");
 //		return 0;
+//	}
 //}
 
 
@@ -997,260 +1002,19 @@ int lerValor() {
 //
 //}
 
-
-//EX36
-//#define TAM 20
-//int main() {
-//	int i, j, n;
-//	for (i = 0; i < TAM; i++) {
-//		printf("Digite um número para o cálculo de sua tabuada de 1 a n x n\n");
-//		scanf("%d", &n);
-//		for (j = 1; j <= n; j++) {
-//			printf("%d x %d = %d\n", j, n, j * n);
-//		}
-//	}
-//	system("pause");
-//	return 0;
-//}
-
-
-//EX 37
-//struct dma {
-//	int dia;
-//	int mes;
-//	int ano;
-//};
-//
-//bool valida(struct dma data) {
-//	/* retorna true se data válida ou false se inválida */
-//	if (data.mes < 1 || data.mes > 12)
-//		return false;
-//	else {
-//		if (data.mes == 2) {
-//			if ((data.ano % 4 == 0) && (data.ano % 100 != 0) || (data.ano % 400 == 0)) {
-//				if (data.dia < 1 || data.dia > 29)
-//					return false;
-//			}
-//			else
-//				if (data.dia < 1 || data.dia > 28)
-//					return false;
-//		}
-//		else {
-//			if (data.mes == 4 || data.mes == 6 || data.mes == 9 || data.mes == 11) {
-//				if (data.dia < 1 || data.dia > 30)
-//					return false;
-//			}
-//			else
-//				if (data.dia < 1 || data.dia > 31)
-//					return false;
-//		}
-//	}
-//	return true;
-//}
-//
-//int dias_decorridos(struct dma data_ini, struct dma data_fim) {
-//	int dias_no_mes[13] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 }, tot_dias_ini, tot_dias_fim, i;
-//	tot_dias_ini = data_ini.ano * 365.2425;
-//	for (i = 1; i<data_ini.mes; i++)
-//		tot_dias_ini += dias_no_mes[i];
-//	if (((data_ini.ano % 4 == 0) && (data_ini.ano % 100 != 0) || (data_ini.ano % 400 == 0)) && data_ini.mes > 2)
-//		tot_dias_ini++;
-//	tot_dias_ini += data_ini.dia;
-//
-//	tot_dias_fim = data_fim.ano * 365.2425;
-//	for (i = 1; i<data_fim.mes; i++)
-//		tot_dias_fim += dias_no_mes[i];
-//	if (((data_fim.ano % 4 == 0) && (data_fim.ano % 100 != 0) || (data_fim.ano % 400 == 0)) && data_fim.mes > 2)
-//		tot_dias_fim++;
-//	tot_dias_fim += data_fim.dia;
-//
-//	return (tot_dias_fim - tot_dias_ini);
-//}
-//
-//
-//int main() {
-//	struct dma data1, data2;
-//	printf("Informe a primeira data: ");
-//	scanf("%d %d %d", &data1.dia, &data1.mes, &data1.ano);
-//	while (!valida(data1)) {
-//		printf("Data inválida. Reinforme a primeira data: ");
-//		scanf("%d %d %d", &data1.dia, &data1.mes, &data1.ano);
-//	}
-//	printf("Informe a segunda data: ");
-//	scanf("%d %d %d", &data2.dia, &data2.mes, &data2.ano);
-//	while (!valida(data2)) {
-//		printf("Data inválida. Reinforme a segunda data: ");
-//		scanf("%d %d %d", &data2.dia, &data2.mes, &data2.ano);
-//	}
-//	printf("Dias decorridos: %d\n", dias_decorridos(data1, data2));
-//	return 0;
-//}
-
-//EX38
-//typedef struct dado {
-//	int horas;
-//	int minutos;
-//}Dado;
-//
+//EX 36
 //int main()
 //{
-//	Dado w;
-//	int x, y;
-//	printf("informe  os minutos");
-//	scanf_s("%d", &w.minutos);
-//	y = w.minutos / 60;
-//	x = w.minutos % 60;
-//	printf("%i:%i", y, x);
-//	system("pause");
-//	return 0;
-//}
-
-//EX 39
-//typedef struct
-//{
-//	char nome[50];
-//	long altura;
-//	float peso;
-//	int cpf;
-//	char sexo;
-//} imc;
 //
-//int main()
-//{
-//	imc imcs[50];
-//	int code;
-//	int op, i = 0, j = 0, IMC, h, DIM = 0, teste;
-//	char H, M;
-//INICIO:
-//	printf(" PROGRAMA IMC ");
-//	printf("\n\n Deseja cadastrar pessoa? | < 1 > SIM | < 2 >  NAO |\n");
-//	scanf_s("%i", &op);
-//	switch (op)
-//	{
-//	case 1: {goto CADASTRAR; }
-//	case 2: {goto SAIR; }
-//	}
-//	for (;; i++)
-//	{
-//	REFAZ: system("cls");
-//		printf("\n\n Deseja continuar cadastros? | < 1 > |");
-//		printf("\n Consultar?                  | < 2 > |");
-//		printf("\n SAIR                        | < 3 > |\n");
-//		scanf_s("%i", &op);
-//		switch (op) {
-//		case 1: {goto CADASTRAR; }
-//		case 2: {goto CONSULTAR; }
-//		case 3: {goto SAIR; }
-//		}
+//	int cod = 0, quant = 0;
+//	float precotot, preco;
 //
-//	CADASTRAR: i = i + 1; DIM = i;
-//
-//		printf("\n NOME da %io pessoa: \t", i);     scanf_s(" %s", &imcs[i].nome);
-//		printf("\n ALTURA da %io pessoa: \t", i);   scanf_s(" %ld", &imcs[i].altura);
-//		printf("\n PESO da %io pessoa: \t", i);     scanf_s(" %f", &imcs[i].peso);
-//		printf("\n CPF da %io pessoa: \t", i);      scanf_s(" %i", &imcs[i].cpf);
-//	CONSULTAR:
-//		printf("\n SEXO da %io pessoa: \t", i);
-//		printf("\n < 1 - HOMEM > | < 2 - MULHER > ");
-//		scanf_s("%i", &op);
-//		switch (op)
-//		{
-//		case 1:
-//			goto CONSULTARH;
-//		case 2:
-//			goto CONSULTARM;
-//		}
-//		system("cls");
-//		for (j = 1; j <= DIM; j++) {
-//			printf("\n Codigo %i: - %i", j, imcs[j].cpf);
-//		}
-//		goto REFAZ;
-//	}
-//
-//CONSULTARH:
-//	printf("\n Digite o CPF para calcular o IMC\t");
-//	scanf_s("%i", &code);
-//	for (j = 1; j <= DIM; j++) {
-//		if (code == imcs[j].cpf)
-//		{
-//			h = ((imcs[i].altura / 100) ^ 2);
-//			IMC = imcs[j].peso / h;
-//			if (IMC<20.7) { goto ABAIXO; }
-//			if ((IMC>20.8) && (IMC <26.4)) { goto NORMAL; }
-//			if ((IMC >26.5) && (IMC<27.8)) { goto ACIMA; }
-//			if ((IMC >27.9) && (IMC<31.1)) { goto SOBREPESO; }
-//			if (IMC >31, 1) { goto OBESO; }
-//			goto INICIO;
-//		}
-//		if (code != imcs[j].cpf)
-//		{
-//			printf("\n >> CPF INVALIDO! <<");
-//			//getch();
-//			system("cls");
-//			goto CONSULTARH;
-//		}
-//	}
-//CONSULTARM:
-//	printf("\n Digite o CPF para calcular o IMC\t");
-//	scanf_s("%i", &code);
-//	for (j = 1; j <= DIM; j++) {
-//		if (code == imcs[j].cpf)
-//		{
-//			h = ((imcs[i].altura / 100) ^ 2);
-//			IMC = imcs[j].peso / h;
-//			if (IMC<19.1) { goto ABAIXO; }
-//			if ((IMC>19.1) && (IMC <= 25.8)) { goto NORMAL; }
-//			if ((IMC >25.8) && (IMC <= 27.3)) { goto ACIMA; }
-//			if ((IMC >27.3) && (IMC <= 32.2)) { goto SOBREPESO; }
-//			if (IMC >32.2) { goto OBESO; }
-//			goto INICIO;
-//		}
-//		if (code != imcs[j].cpf)
-//		{
-//			printf("\n >> CPF INVALIDO! <<");
-//			//getch();
-//			system("cls");
-//			goto CONSULTARM;
-//		}
-//	}
-//ABAIXO: printf("\n O IMC eh: %.2f", imcs[j].peso / h);
-//	printf("\n ABAIXO DO PESO");
-//	//getch();
-//	goto REFAZ;
-//NORMAL: printf("\n O IMC eh: %.2f", imcs[j].peso / h);
-//	printf("\n PESO NORMAL");
-//	//getch();
-//	goto REFAZ;
-//ACIMA:  printf("\n O IMC eh: %.2f", imcs[j].peso / h);
-//	printf("\n ACIMA DO PESO");
-//	//getch();
-//	goto REFAZ;
-//SOBREPESO: printf("\n O IMC eh: %.2f", imcs[j].peso / h);
-//	printf("\n ATENÇÃO SOBREPESO!!");
-//	//getch();
-//	goto REFAZ;
-//OBESO: printf("\n O IMC eh: %.2f", imcs[j].peso / h);
-//	printf("\n CUIDADO, RISCO DE INFARTO");
-//	//getch();
-//	goto REFAZ;
-//SAIR: return 0;
-//
-//	system("pause");
-//}
-
-
-//EX 40
-
-//int main()
-//{
-//	setlocale(LC_ALL, "Portuguese");
-//	float cod = 0, precotot = 0, preco = 0;
-//	int  quant = 0;
-//
+//	
+//	
 //	do
 //	{
-//		printf("Digite o cod: ");
-//		scanf_s("%f", &cod);
+//		printf("Digite o codigo do produto ");
+//		scanf_s("%i", &cod);
 //
 //		if (cod == -1)
 //		{
@@ -1259,39 +1023,46 @@ int lerValor() {
 //		else
 //		{
 //
-//			printf("Digite a quantidade: ");
+//
+//
+//			printf("Digite a quantidade do produto ");
 //			scanf_s("%i", &quant);
 //
-//			if (cod == 1001) {
+//			if (cod == 1001)
+//			{
 //				preco = 5.32;
 //				precotot = (preco * quant);
 //			}
 //
-//			else if (cod == 1324) {
+//			else if (cod == 1324)
+//			{
 //				preco = 6.45;
 //				precotot = (preco * quant);
-//
 //			}
-//			else if (cod == 6548) {
+//
+//			else if (cod == 6548)
+//			{
 //				preco = 2.37;
 //				precotot = (preco * quant);
 //			}
 //
-//			else if (cod == 947) {
+//			else if (cod == 987) //Não funciona com o 0 // 0987
+//			{
 //				preco = 5.32;
 //				precotot = (preco * quant);
 //			}
-//			else if (cod == 7623) {
+//
+//			else if (cod == 7623)
+//			{
 //				preco = 6.45;
 //				precotot = (preco * quant);
 //			}
 //		}
-//	} while (cod > -1);
+//	}while (cod != -1);
 //
-//	printf("O valor total é %.2f", precotot);
+//	printf("O preco total e %.2f ", precotot);
 //
 //	system("pause");
-//	return 0;
-
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//	return 0; 
+//}
 
